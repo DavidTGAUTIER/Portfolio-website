@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio David Tiffeneau-Gautier - Data Scientist, Engineer et DevOps</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b2bb7dc10c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo2.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Data Science</p>
+            <h1>Hi, I'm <span>David</span> TG<br> From France</h1>
+        </div>
+    </div>
+</div>
+<!-------------------------------about--------------------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user2.png"></img>
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Data & Me</h1>
+                <p>Les données aujourd'hui sont partout. Etant passionné d'informatique et de mathématiques,
+                    je me perfectionne en permanence pour apprendre tous les jours de nouvelles techniques qui
+                    permettront de parfaire les connaissances et de pouvoir les mettre en pratique à travers différents
+                    projets comme la création d'un système de recommandation, des analyses statistiques pour detecter des 
+                    patterns ainsi que de la gestion reseau et developpement de graphs pour connecter le monde entier !
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Data Science</span><br>Statistics Analysis & Machine Learning</li>
+                        <li><span>Data Engineering</span><br>Docker & Kubernetes</li>
+                        <li><span>Deep Learning</span><br>Build Multi layer Neural Network</li>
+                        <li><span>Software Developpement</span><br>Problem resolving & Application</li>
+                        <li><span>Programming Languages</span><br>C - C++ - Java - Python - SQL - JavaScript </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Sept 2022 - Actuel</span><br>Jedha Bootcamp - Machine Learning & Deep Learning</li>
+                        <li><span>Mars - Sept 2022</span><br>BM Parteners - Data Scientist</li>
+                        <li><span>Janv - Mars 2022</span><br>One Eye - Data Analyst</li>
+                        <li><span>Oct - Dec 2021</span><br>Honda Motors - Data Analyst</li>
+                        <li><span>Sept - Oct 2021</span><br>Jedha Bootcamp - Data Analysis & Dashboarding</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Diplome</span><br>Conceptor / Developper in Data Science</li>
+                        <li><span>Data Engineering</span><br>Jedha Bootcamp - Lead - Data Engineering</li>
+                        <li><span>Data Science</span><br>Jedha Bootcamp - Fullstack - Data Science</li>
+                        <li><span>Data Analysis</span><br>Jedha Bootcamp - Essentials - Data Analysis</li>
+                        <li><span>ML Engineering </span><br>Harvard - CS50 - AI</li>
+                        <li><span>Data Analyst</span><br>University of Helsinski - Data Analysis</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------------------------services--------------------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <!---<i class="fa-solid fa-code"></i> -->
+                <!---<i class="fa-solid fa-database"></i> -->
+                <i class="fa-solid fa-chart-simple"></i>
+                <h2>Data Mining - E.D.A</h2>
+                <p>
+                    Je collecterai la donnée et produirai une analyse exloratoire pour en tirer le meilleur, que cela soit en terme de profit pour 
+                    votre entreprise ou pour optimiser les process internes, le developpement ou bien la cohésion d'équipe.
+                </p>
+                <a href="#">En savoir davantage</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-brain"></i>
+                <h2>ML - DL</h2>
+                <p>
+                    Je développerai des reseaux de neurones et des algorithmes d'intelligence artificielle pour prédire des données futures ou classifier
+                    nos données pour créer des clusters qui aideront à l'identification de certains patterns économiques.
+                </p>
+                <a href="#">En savoir davantage</a>
+            </div>
+            <div>
+                <!---- <i class="fa-solid fa-chart-network"></i> -->
+                <i class="fa-solid fa-server"></i>
+                <h2>App Deployment</h2>
+                <p>
+                    Je deploierai en production les algorithmes que nous venons de tester pour optimiser leur performance, developper des applications
+                    et pouvoir echanger sur tous les process inhérents à la conception de pipeline architectural par des graphs.
+                </p>
+                <a href="#">En savoir davantage</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------------------------portfolio--------------------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png" alt="">
+                <div class="layer">
+                    <h3>Finance Dashboarding</h3>
+                    <p>K.P.I permettant d'identifier les meilleures opportunités en 
+                        améliorant les process 
+                    </p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png" alt="">
+                <div class="layer">
+                    <h3>Engineer Dashboarding</h3>
+                    <p>Optimisation des process interne pour devs pour gagner en 
+                        efficacité de production
+                    </p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png" alt="">
+                <div class="layer">
+                    <h3>Research Dashboarding</h3>
+                    <p>Travail experimental en Data science par creation
+                        de reseaux de neurones
+                    </p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">En voir davantage</a>
+    </div>
+</div>
+<!----------------------------contact------------------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                <p><i class="fa-solid fa-phone-square-alt"></i>0123456789</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>   
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>   
+        </div> 
+    </div>
+    <div class="copyright">
+        <p>Copyright @David. Made with <i class="fas fa-heart"></i> by Me</p>
+    </div>
+</div>
+
+<!------------------------------javascript----------------------------- -->
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";  
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";  
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbydpG-RcbtBQsASOsQzNhU6jANgQ7AexHic6fP4xJSdkCUWUHqojjrqqGr3cvmNT_DOcw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>   
+</body>
+</html>
